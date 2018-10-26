@@ -13,10 +13,9 @@ h1 {
 
 
 body {
-  background-image: );
+  background-image: url("https://media.giphy.com/media/l0HlxmJJbxo1Uq8QU/giphy.gif");
   background-repeat: no-repeat;
-  background-size: auto;
-  background-size: 87% 68em;
+  background-size: cover;
   background-position: center;
   background-color: #77acff;
 
