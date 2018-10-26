@@ -117,8 +117,8 @@ li a {
       display: flex;
       justify-content: center;
       width: 70%;
-      height: 500px;
-      padding-top: 5%;
+      height: 600px;
+      padding-top: 2%;
   }
 
   .image01 img {
@@ -126,7 +126,7 @@ li a {
   }
 
   .image-text01 {
-      margin: 5% 2% 0 0;
+      margin: 2% 2% 0 0;
       width: 90%;
       justify-content: center;
       display: flex;
