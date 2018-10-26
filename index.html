@@ -15,16 +15,18 @@
 <body>
 
 <div class="wrapper">
-	<div id="#home" class="home-wrapper">
+	<div id="home" class="home-wrapper">
 		<div class="main-content">
 			<h1>Paradise Studios</h1>
-				<ul>
-				  <li><a href="#home">Home</a></li>
-				  <li><a href="#content01">Content01</a></li>
-				  <li><a href="#content02">Content02</a></li>
-				  <li><a href="#content03">Content03</a></li>
-				  <li><a href="#content04">Content04</a></li>
-				</ul>
+				<nav id="navigation">
+					<ul>
+					  <li><a href="#home">Home</a></li>
+					  <li><a href="#content01">Content01</a></li>
+					  <li><a href="#content02">Content02</a></li>
+					  <li><a href="#content03">Content03</a></li>
+					  <li><a href="#content04">Content04</a></li>
+					</ul>
+				</nav>
 				<!-- <div class="mouse_scroll">
 						<div>
 							<span class="scroll_arrows top"></span>
@@ -88,6 +90,8 @@
 	</div>
 
 <script type="text/javascript">
+	
+//animation for the arrow on the homepage
 	$(document).ready(function(){
   function scrollDown() {
     $('#scroll-d').effect('bounce', {times:1}, 2000, scrollDown);
@@ -95,42 +99,53 @@
   scrollDown();
 });
 
-	// Select all links with hashes
+
+
+// adds the smooth scrolling animation
 $('a[href*="#"]')
-  // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
   .click(function(event) {
-    // On-page links
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
       && 
       location.hostname == this.hostname
     ) {
-      // Figure out element to scroll to
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
       if (target.length) {
-        // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $('html, body').animate({
           scrollTop: target.offset().top
         }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
           var $target = $(target);
           $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
+          if ($target.is(":focus")) {
             return false;
           } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
+            $target.attr('tabindex','-1');
+            $target.focus(); 
           };
         });
       }
     }
   });
+
+
+ //sticky header
+ window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("navigation");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
 </script>
 
 

@@ -52,6 +52,17 @@ li a {
 }
 /*end navigation*/
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#navigation {
+  width: 100%;
+  background: rgba(0,0,0,.2);
+}
+
 /*start of arrow*/
 #scroll-d {
   display: block;
@@ -85,6 +96,7 @@ li a {
   .content01-wrapper {
       height: 100vh;
       background: slategrey;
+      padding-top: 3%;
   }
 
   .content01-wrapper:nth-child(2) {
@@ -156,6 +168,10 @@ li a {
     top: 30%;
   }
 
+  .content01-wrapper {
+    padding-top: 8%;
+  }
+
   ul {
     font-size: 1em;
     font-family: 'Helvetica';
@@ -163,6 +179,13 @@ li a {
     text-shadow: 1px 1px 50px black;
   }
 
+  #navigation > ul > li:nth-child(1) {
+    display: none;
+  }
+
+  li a {
+    padding: 15% 8%;
+  }
 
   /*start of content01*/
   .content01-wrapper {
