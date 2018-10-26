@@ -139,6 +139,7 @@ li a {
       color: white;
       font-size: 1.2em;
       width: 90%;
+    font-family: 'Helvetica';
   }
   /*end of content 01*/
 
@@ -187,7 +188,6 @@ li a {
       justify-content: center;
       width: 100%;
       height: 350px;
-      padding-top: 5%;
   }
 
   .image01 img {
@@ -195,18 +195,18 @@ li a {
   }
 
   .image-text01 {
-      margin-top: 5%;
+      margin-top: 2%;
       width: 90%;
       justify-content: center;
       display: flex;
       width: 100%;
       background: rgba(0,0,0,.1);
-      padding: 10% 0 10% 0;
+      padding: 5% 0 5% 0;
   }
 
   .image-text01 p {
       color: white;
-      font-size: 1.2em;
+      font-size: 1.1em;
       width: 90%;
   }
   /*end of content 01*/
