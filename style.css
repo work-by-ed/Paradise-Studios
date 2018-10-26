@@ -50,7 +50,11 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-/*end navigation*/
+
+li a:hover {
+    color: white;
+    background: rgba(0,0,0,.5);
+}
 
 .sticky {
   position: fixed;
@@ -60,8 +64,18 @@ li a {
 
 #navigation {
   width: 100%;
-  background: rgba(0,0,0,.2);
+  background: transparent;
 }
+
+.scroll-nav {
+  background: rgba(0,0,0,.2);
+  width: 100%;
+}
+
+
+/*end navigation*/
+
+
 
 /*start of arrow*/
 #scroll-d {
@@ -183,8 +197,17 @@ li a {
     display: none;
   }
 
+  #navigation {
+    width: 100%;
+    /*background: rgba(0,0,0,.3);*/
+}
+
   li a {
     padding: 15% 8%;
+  }
+
+  li a:hover {
+    background: transparent;
   }
 
   /*start of content01*/
