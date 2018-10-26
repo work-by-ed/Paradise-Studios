@@ -7,7 +7,10 @@
 <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Comfortaa|Gruppo" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-11/256/money-with-wings.png" sizes="16x16" type="image/png"> 
+<link rel="icon" type="image/x-icon" href="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-11/256/money-with-wings.png" sizes="16x16" type="image/png"> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
 
@@ -24,11 +27,31 @@
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about">About</a></li>
 </ul>
-</div>
+<!-- <div class="mouse_scroll">
+		<div>
+			<span class="scroll_arrows top"></span>
+			<span class="scroll_arrows mid"></span>
+			<span class="scroll_arrows bottom"></span>
+		</div>
+</div> -->
 
 
+<div id="scroll-d"><i class="fa fa-angle-down"></i></div>
+
+</div>
+
 </div>
 </div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+  function scrollDown() {
+    $('#scroll-d').effect('bounce', {times:1}, 2000, scrollDown);
+  }
+  scrollDown();
+});
+</script>
+
 
 </body>
 </html>
