@@ -169,6 +169,10 @@ li a {
       background: slategrey;
   }
 
+  .inner-content01 {
+    display: block;
+  }
+
   .title01 {
       font-size: 3em;
       font-family: 'Pacifico', cursive;
