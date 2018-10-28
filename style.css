@@ -12,11 +12,13 @@ h1 {
 
 .home-wrapper {
   height: 100vh;
-  background-image: url("https://media.giphy.com/media/l0HlxmJJbxo1Uq8QU/giphy.gif");
+  /*background-image: url("https://media.giphy.com/media/l0HlxmJJbxo1Uq8QU/giphy.gif");*/
+  background-image: url("https://i.imgur.com/qfjkLVx.gif");
   background-color: #77acff;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 100%;
+  /*background-position: 100%;*/
+  background-position: 0% 0%;
 }
 
 .main-content {
@@ -49,11 +51,14 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: .5s ease;
+
 }
 
 li a:hover {
     color: white;
     background: rgba(0,0,0,.5) !important;
+    transition: .5s ease;
 }
 
 .sticky {
