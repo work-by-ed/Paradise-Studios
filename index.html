@@ -27,14 +27,14 @@
 					  <li><a href="#content04">Content04</a></li>
 					</ul>
 				</nav>
-				<!-- <div class="mouse_scroll">
+				<div class="mouse_scroll">
 						<div>
 							<span class="scroll_arrows top"></span>
 							<span class="scroll_arrows mid"></span>
 							<span class="scroll_arrows bottom"></span>
 						</div>
-				</div> -->
-				<div id="scroll-d"><i class="fa fa-angle-down"></i></div>
+				</div>
+				<!-- <div id="scroll-d"><i class="fa fa-angle-down"></i></div> -->
 		</div>
 	</div>
 	<div id="content01" class="content01-wrapper">
@@ -141,9 +141,11 @@ Should be equal the the height of the header
 $(window).scroll(function(){
     if ($(window).scrollTop() >= 300) {
         $('#navigation').addClass('sticky');
+        $("#navigation").addClass('scroll-nav');
     }
     else {
         $('#navigation').removeClass('sticky');
+        $("#navigation").removeClass('scroll-nav');
     }
 });
 

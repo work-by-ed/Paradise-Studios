@@ -197,11 +197,6 @@ li a:hover {
     display: none;
   }
 
-  #navigation {
-    width: 100%;
-    /*background: rgba(0,0,0,.3);*/
-}
-
   li a {
     padding: 15% 8%;
   }
@@ -260,10 +255,6 @@ li a:hover {
 /*end smaller than 500px*/
 
 
-
-
-
-/*
 .mouse_scroll {
   display: block;
   margin: 0 auto;
@@ -357,4 +348,3 @@ li a:hover {
 
 
 
-*/
