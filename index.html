@@ -11,14 +11,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
 </head>
 <body>
 
 <div class="wrapper">
 	<div id="home" class="home-wrapper">
-		<div class="main-content">
-			<h1>Paradise Studios</h1>
 				<nav id="navigation">
+					<h1>Paradise Studios</h1>
 					<ul>
 					  <li><a href="#home">Home</a></li>
 					  <li><a href="#content01">Book</a></li>
@@ -29,6 +29,7 @@
 					  <li><a href="#content06">Client</a></li>
 					</ul>
 				</nav>
+		<div class="main-content">
 				<div class="mouse_scroll">
 						<div>
 							<span class="scroll_arrows top"></span>
@@ -42,19 +43,35 @@
 	<div id="content01" class="content01-wrapper">
 		<div class="title01">Book</div>
 		<div class="inner-content01">
-			<div class="image01">
-				<img src="https://i0.wp.com/hifadhiafrica.org/wp-content/uploads/2017/01/default-placeholder.png">
-			</div>
-			<div class="image-text01">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</div>
+		<section class="get-in-touch">
+		   <form class="contact-form row">
+		      <div class="form-field col x-50">
+		         <input id="name" class="input-text js-input" type="text" required>
+		         <label class="label" for="name">Name</label>
+		      </div>
+		      <div class="form-field col x-50">
+		         <input id="phone" class="input-text js-input" type="text" required>
+		         <label class="label" for="phone">Phone Number</label>
+		      </div>
+		      <div class="form-field col x-50">
+		         <input id="email" class="input-text js-input" type="email" required>
+		         <label class="label" for="email">E-mail</label>
+		      </div>
+		      <div class="form-field col x-100">
+		         <input id="message" class="input-text js-input" type="text" required>
+		         <label class="label" for="message">Message</label>
+		      </div>
+		      <div class="form-field col x-100 align-center">
+		         <input class="submit-btn" type="submit" value="Submit">
+		      </div>
+		   </form>
+		</section>
 		</div>
 	</div>
 
 		<div id="content02" class="content01-wrapper">
 		<div class="title01">Rates</div>
-		<div class="inner-content01">
+		<div class="inner-content02">
 			<div class="image01">
 				<img src="https://i0.wp.com/hifadhiafrica.org/wp-content/uploads/2017/01/default-placeholder.png">
 			</div>
@@ -67,7 +84,7 @@
 
 		<div id="content03" class="content01-wrapper">
 		<div class="title01">About</div>
-		<div class="inner-content01">
+		<div class="inner-content03">
 			<div class="image01">
 				<img src="https://i0.wp.com/hifadhiafrica.org/wp-content/uploads/2017/01/default-placeholder.png">
 			</div>
@@ -80,7 +97,7 @@
 
 		<div id="content04" class="content01-wrapper">
 		<div class="title01">Studio</div>
-		<div class="inner-content01">
+		<div class="inner-content04">
 			<div class="image01">
 				<img src="https://i0.wp.com/hifadhiafrica.org/wp-content/uploads/2017/01/default-placeholder.png">
 			</div>
@@ -93,7 +110,7 @@
 
 			<div id="content05" class="content01-wrapper">
 		<div class="title01">Staff</div>
-		<div class="inner-content01">
+		<div class="inner-content05">
 			<div class="image01">
 				<img src="https://i0.wp.com/hifadhiafrica.org/wp-content/uploads/2017/01/default-placeholder.png">
 			</div>
@@ -107,7 +124,7 @@
 
 		<div id="content06" class="content01-wrapper">
 		<div class="title01">Clients</div>
-		<div class="inner-content01">
+		<div class="inner-content06">
 			<div class="image01">
 				<img src="https://i0.wp.com/hifadhiafrica.org/wp-content/uploads/2017/01/default-placeholder.png">
 			</div>
@@ -169,7 +186,7 @@ Should be equal the the height of the header
 ========================================== */
 
 $(window).scroll(function(){
-    if ($(window).scrollTop() >= 300) {
+    if ($(window).scrollTop() >= 500) {
         $('#navigation').addClass('sticky');
     }
     else {
@@ -177,8 +194,18 @@ $(window).scroll(function(){
     }
 });
 
+//form
 
+$( '.js-input' ).keyup(function() {
+  if( $(this).val() ) {
+     $(this).addClass('not-empty');
+  } else {
+     $(this).removeClass('not-empty');
+  }
+});
 </script>
+
+
 
 
 </body>
