@@ -6,7 +6,7 @@
 h1 {
   font-family:  'Pacifico', cursive;
   color: white;
-  font-size: 7em;
+  font-size: 6em;
   text-shadow: 2px 2px black;
 }
 
@@ -53,23 +53,20 @@ li a {
 
 li a:hover {
     color: white;
-    background: rgba(0,0,0,.5);
+    background: rgba(0,0,0,.5) !important;
 }
 
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
+  background:  rgba(0,0,0,.5);
+  transition: .5s ease;
 }
 
 #navigation {
   width: 100%;
-  background: transparent;
-}
-
-.scroll-nav {
-  background: rgba(0,0,0,.2);
-  width: 100%;
+  transition: .5s ease;
 }
 
 
@@ -126,6 +123,14 @@ li a:hover {
     background: darkseagreen;
   }
 
+  .content01-wrapper:nth-child(5) {
+    background: orange;
+  }
+
+  .content01-wrapper:nth-child(5) {
+    background: purple;
+  }
+
   .inner-content01 {
     display: flex;
   }
@@ -134,7 +139,6 @@ li a:hover {
       font-size: 3em;
       font-family: 'Pacifico', cursive;
       color: white;
-      font-weight: 700;
       text-shadow: 2px 2px black;
       text-align: center;
   }
