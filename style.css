@@ -91,6 +91,7 @@ li a:hover {
   position: fixed;
   top: 0;
   z-index: 999;
+  font-family: 'Space Mono', monospace;
 }
 
 
@@ -148,8 +149,8 @@ li a:hover {
 
   .title01 {
       width: 20%;
-      font-size: 5em;
-      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 3.5em;
+      font-family: 'Space Mono', monospace;
       color: #ffffff99;
       text-shadow: 2px 2px black;
       text-align: center;
@@ -370,9 +371,9 @@ li a:hover {
 .about-us {
   width: 60%;
   color: white;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Space Mono', monospace;
   text-align: center;
   margin: 0 auto;
-  font-size: 2em;
+  font-size: 1.5em;
   padding-top: 5%;
 }
