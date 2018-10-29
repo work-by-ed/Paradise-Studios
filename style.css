@@ -15,6 +15,7 @@ h1 {
     font-weight: 400;
     animation: flow 6s linear infinite;
     padding-left: 4%;
+    padding-top: .4%;
     width: 25%;
     /*transform: rotate(-10deg);*/
     /*padding-top: 2%;*/
@@ -52,7 +53,6 @@ ul {
     list-style-type: none;
     overflow: hidden;
     display:table; margin:0 auto;
-    font-family: 'Gruppo', cursive;
     font-size: 1.3em;
     margin-right: 8%;
 }
@@ -68,7 +68,7 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
     transition: .4s ease;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 li a:hover {
@@ -81,6 +81,7 @@ li a:hover {
   background:  #ffffff99;
   z-index: 99;
   transition: .5s ease;
+  border-bottom: 1px solid white;
 }
 
 #navigation {
@@ -131,7 +132,7 @@ li a:hover {
       height: 100vh;
       background: black !important;
       padding-top: 4%;
-      outline: 2px dotted gold;
+      outline: 1px solid #ffffff99;
   }
 
   .inner-content01,
@@ -148,12 +149,11 @@ li a:hover {
   .title01 {
       width: 20%;
       font-size: 5em;
-      font-family: 'Pacifico', cursive;
-      color: gold;
+      font-family: 'Source Sans Pro', sans-serif;
+      color: #ffffff99;
       text-shadow: 2px 2px black;
       text-align: center;
       padding-top: 0;
-      border-bottom: 1px solid gold;
       margin: 0 auto;
   }
 
@@ -235,7 +235,6 @@ li a:hover {
 
   .title01 {
       font-size: 3em;
-      font-family: 'Pacifico', cursive;
       color: white;
       font-weight: 700;
       text-shadow: 2px 2px black;

@@ -117,16 +117,6 @@
 
 
 <script type="text/javascript">
-	
-//animation for the arrow on the homepage
-	$(document).ready(function(){
-  function scrollDown() {
-    $('#scroll-d').effect('bounce', {times:1}, 2000, scrollDown);
-  }
-  scrollDown();
-});
-
-
 
 // adds the smooth scrolling animation
 $('a[href*="#"]')
@@ -172,16 +162,6 @@ $(window).scroll(function(){
     else {
         $('#navigation').removeClass('sticky');
     }
-});
-
-//form
-
-$( '.js-input' ).keyup(function() {
-  if( $(this).val() ) {
-     $(this).addClass('not-empty');
-  } else {
-     $(this).removeClass('not-empty');
-  }
 });
 </script>
 
