@@ -37,6 +37,7 @@ h1 {
   background-size: cover;
   /*background-position: 100%;*/
   background-position: 0% 0%;
+  text-decoration: none;
 }
 
 .main-content {
@@ -92,6 +93,13 @@ li a:hover {
   top: 0;
   z-index: 999;
   font-family: 'Space Mono', monospace;
+
+}
+
+.logo a{
+
+  text-decoration: none;
+  color: #fff;
 }
 
 
@@ -375,5 +383,5 @@ li a:hover {
   text-align: center;
   margin: 0 auto;
   font-size: 1.5em;
-  padding-top: 5%;
+  padding-top: 9%;
 }
